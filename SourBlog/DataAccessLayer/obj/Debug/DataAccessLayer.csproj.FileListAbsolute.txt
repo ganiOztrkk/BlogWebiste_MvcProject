@@ -1,0 +1,17 @@
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.writercontentrelation.resources
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache

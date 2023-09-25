@@ -1,0 +1,6 @@
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\obj\Debug\BusinessLayer.pdb
