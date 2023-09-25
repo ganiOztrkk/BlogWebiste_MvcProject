@@ -81,3 +81,12 @@ C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\obj\Deb
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\obj\Debug\SourBlogUI.csproj.CopyComplete
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\obj\Debug\SourBlogUI.dll
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\obj\Debug\SourBlogUI.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\BusinessLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\DataAccessLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\EntityLayer.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\BusinessLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\BusinessLayer.dll.config
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\DataAccessLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\DataAccessLayer.dll.config
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\EntityLayer.pdb
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\EntityLayer.dll.config
