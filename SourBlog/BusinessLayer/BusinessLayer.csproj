@@ -51,10 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Abstract\IAboutService.cs" />
+    <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\IContactService.cs" />
+    <Compile Include="Abstract\IContentService.cs" />
+    <Compile Include="Abstract\IHeadingService.cs" />
+    <Compile Include="Abstract\IWriterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
       <Project>{850ba5f5-24ad-4961-b48e-4ecaf9a9ebe6}</Project>

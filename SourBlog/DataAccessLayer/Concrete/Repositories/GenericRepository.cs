@@ -10,11 +10,12 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class GenericRepository<T> : IRepositoryDal<T> where T : class, IEntity
     {
-        private readonly Context _context = new Context();
+        private readonly Context _context;
         private readonly DbSet<T> _entities;
 
-        public GenericRepository()
+        public GenericRepository(Context context)
         {
+            _context = context;
             _entities = _context.Set<T>();
         }
         
