@@ -1,6 +1,8 @@
-﻿namespace BusinessLayer.Abstract
+﻿using EntityLayer.Concrete;
+
+namespace BusinessLayer.Abstract
 {
-    public interface IAboutService
+    public interface IAboutService : IGenericService<About>
     {
         
     }

@@ -8,8 +8,5 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
     {
-        public EfCategoryDal(Context context) : base(context)
-        {
-        }
     }
 }

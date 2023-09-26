@@ -6,7 +6,7 @@ using EntityLayer.Concrete;
 
 namespace BusinessLayer.Abstract
 {
-    public interface ICategoryService
+    public interface ICategoryService : IGenericService<Category>
     {
     }
 }

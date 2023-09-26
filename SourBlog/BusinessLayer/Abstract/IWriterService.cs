@@ -1,6 +1,8 @@
-﻿namespace BusinessLayer.Abstract
+﻿using EntityLayer.Concrete;
+
+namespace BusinessLayer.Abstract
 {
-    public interface IWriterService
+    public interface IWriterService : IGenericService<Writer>
     {
         
     }

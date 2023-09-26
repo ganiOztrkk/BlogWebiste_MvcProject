@@ -1,6 +1,9 @@
-﻿namespace DataAccessLayer.Concrete.Repositories
+﻿using DataAccessLayer.Abstract;
+using EntityLayer.Concrete;
+
+namespace DataAccessLayer.Concrete.Repositories
 {
-    public class EfContentDal
+    public class EfContentDal : GenericRepository<Content>, IContentDal
     {
         
     }

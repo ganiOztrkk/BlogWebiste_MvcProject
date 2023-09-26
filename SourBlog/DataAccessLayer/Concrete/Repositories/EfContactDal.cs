@@ -1,6 +1,9 @@
-﻿namespace DataAccessLayer.Concrete.Repositories
+﻿using DataAccessLayer.Abstract;
+using EntityLayer.Concrete;
+
+namespace DataAccessLayer.Concrete.Repositories
 {
-    public class EfContactDal
+    public class EfContactDal : GenericRepository<Contact>, IContactDal
     {
         
     }

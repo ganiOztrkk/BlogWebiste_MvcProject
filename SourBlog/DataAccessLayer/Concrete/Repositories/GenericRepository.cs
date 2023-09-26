@@ -10,30 +10,22 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class GenericRepository<T> : IRepositoryDal<T> where T : class, IEntity
     {
-        private readonly Context _context;
-        private readonly DbSet<T> _entities;
-
-        public GenericRepository(Context context)
-        {
-            _context = context;
-            _entities = _context.Set<T>();
-        }
-        
+        private readonly Context _context = new Context();
 
         public List<T> List()
         {
-            return _entities.ToList();
+            return _context.Set<T>().ToList();
         }
 
         public void Insert(T entity)
         {
-            _entities.Add(entity);
+            _context.Set<T>().Add(entity);
             _context.SaveChanges();
         }
 
         public void Delete(T entity)
         {
-            _entities.Remove(entity);
+            _context.Set<T>().Remove(entity);
             _context.SaveChanges();
         }
 
@@ -44,12 +36,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public T GetById(int id)
         {
-            return _entities.Find(id);
-        }
-
-        public List<T> List(Expression<Func<T, bool>> filter)
-        {
-            return _entities.Where(filter).ToList();
+            return _context.Set<T>().Find(id);
         }
     }
 }

@@ -16,3 +16,9 @@ C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\EntityFramework.xml
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\FluentValidation.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\FluentValidation.xml
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\BusinessLayer\bin\Debug\System.Threading.Tasks.Extensions.xml
