@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    @using (Html.BeginForm("UpdateCategory", "Category", FormMethod.Post))
+    {
+        @Html.HiddenFor(x=>x.CategoryId)
+        <label>Category Name</label>
+        @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CategoryName, "", new { @style = "color:red" })
+        <br />
+        <label>Category Name</label>
+        @Html.TextAreaFor(x => x.CategoryDescription, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CategoryDescription, "", new { @style = "color:red" })
+        <br />
+        <label>Category Name</label>
+        @Html.TextBoxFor(x => x.CategoryStatus, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CategoryStatus, "", new { @style = "color:red" })
+        <br />
+        <button class="btn btn-outline-success">Update</button>
+    }
+</div>

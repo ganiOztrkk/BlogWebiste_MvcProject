@@ -32,10 +32,5 @@ namespace BusinessLayer.Concrete
         {
             throw new NotImplementedException();
         }
-
-        public List<About> List(Expression<Func<About, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

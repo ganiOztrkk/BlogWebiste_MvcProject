@@ -1,6 +1,7 @@
 ﻿@model EntityLayer.Concrete.Category
 @{
-    Layout = null;
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
@@ -10,11 +11,11 @@
     {
         <label>Category Name</label>
         @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
-        @Html.ValidationMessageFor(x => x.CategoryName)
+        @Html.ValidationMessageFor(x => x.CategoryName,"", new{@style="color:red"})
         <br />
         <label>Category Description</label>
         @Html.TextAreaFor(x => x.CategoryDescription, new { @class = "form-control", rows = "3" })
-        @Html.ValidationMessageFor(x => x.CategoryDescription)
+        @Html.ValidationMessageFor(x => x.CategoryDescription, "", new { @style = "color:red" })
         <br />
         <button class="btn btn-outline-primary">Add</button>
     }

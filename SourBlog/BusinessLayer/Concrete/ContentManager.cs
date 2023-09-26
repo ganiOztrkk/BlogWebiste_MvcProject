@@ -36,9 +36,5 @@ namespace BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
-        public List<Content> List(Expression<Func<Content, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

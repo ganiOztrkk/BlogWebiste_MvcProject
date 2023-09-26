@@ -31,6 +31,8 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(T entity)
         {
+            var updatedEntity = _context.Entry(entity);
+            updatedEntity.State = EntityState.Modified;
             _context.SaveChanges();
         }
 

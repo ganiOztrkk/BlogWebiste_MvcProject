@@ -21,10 +21,13 @@ namespace EntityLayer.Concrete
         [StringLength(200)]
         public string WriterImage { get; set; }
 
-        [StringLength(50)]
+        [StringLength(200)]
+        public string WriterAbout { get; set; }
+
+        [StringLength(500)]
         public string WriterMail { get; set; }
 
-        [StringLength(20)]
+        [StringLength(200)]
         public string WriterPassword { get; set; }
 
         //heading tablosu ilişkisi
