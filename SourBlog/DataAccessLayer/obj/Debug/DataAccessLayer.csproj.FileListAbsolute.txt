@@ -16,3 +16,4 @@ C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\ob
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.writercontentrelation.resources
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_edit.resources
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_title.resources
