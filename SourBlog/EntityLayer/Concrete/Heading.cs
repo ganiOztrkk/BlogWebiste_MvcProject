@@ -15,6 +15,8 @@ namespace EntityLayer.Concrete
         [StringLength(70)]
         public string HeadingName { get; set; }
         public DateTime HeadingDate { get; set; }
+
+        public bool HeadingStatus { get; set; }
         
         //Category Tablosu ile ilişki
         public int CategoryId { get; set; }

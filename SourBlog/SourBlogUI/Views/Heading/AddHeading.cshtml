@@ -16,7 +16,7 @@
         @Html.ValidationMessageFor(x => x.CategoryId, "", new { @style = "color:red" })
         <br />
         <label>Heading Creator</label>
-        @Html.DropDownListFor(x => x.WriterId, (List<SelectListItem>)ViewBag.Writers, new { @class = "form-control" })
+        @Html.DropDownListFor(x => x.WriterId, (List<SelectListItem>)ViewBag.Writers, new { @class = "form-control"})
         @Html.ValidationMessageFor(x => x.WriterId, "", new { @style = "color:red" })
         <br />
         <button class="btn btn-primary">Add Heading</button>

@@ -5,35 +5,43 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete
 {
     public class ContentManager : IContentService
     {
+        private readonly IContentDal _contentDal;
+
+        public ContentManager(IContentDal contentDal)
+        {
+            _contentDal = contentDal;
+        }
+
         public List<Content> List()
         {
-            throw new NotImplementedException();
+            return _contentDal.List();
         }
 
         public void Insert(Content entity)
         {
-            throw new NotImplementedException();
+            _contentDal.Insert(entity);
         }
 
         public void Delete(Content entity)
         {
-            throw new NotImplementedException();
+            _contentDal.Delete(entity);
         }
 
         public void Update(Content entity)
         {
-            throw new NotImplementedException();
+            _contentDal.Update(entity);
         }
 
         public Content GetById(int id)
         {
-            throw new NotImplementedException();
+            return _contentDal.GetById(id);
         }
 
     }

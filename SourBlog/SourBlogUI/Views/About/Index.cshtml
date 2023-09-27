@@ -1,0 +1,32 @@
+﻿@model IEnumerable<EntityLayer.Concrete.About>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>About Us Informations</h2>
+<table class="table table-bordered text-center">
+    <tr>
+        <th>#</th>
+        <th>Details</th>
+        <th>Details2</th>
+        <th>Image Url</th>
+        <th>Image Url 2</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AboutId</td>
+            <td>@item.AboutDetails1</td>
+            <td>@item.AboutDetails2</td>
+            <td>@item.AboutImage1</td>
+            <td>@item.AboutImage2</td>
+            <td><a href="/About/DeleteAbout/@item.AboutId" class="btn btn-danger">Delete</a></td>
+            <td><a href="/About/UpdateAbout/@item.AboutId" class="btn btn-warning">Update</a></td>
+        </tr>
+    }
+</table>
+<a href="/About/AddAbout/" class="btn btn-primary">Add New About</a>
+

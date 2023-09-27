@@ -20,7 +20,7 @@ namespace SourBlogUI.Controllers
 
         public ActionResult Index()
         {
-            var writers = _writerService.List();
+            var writers = _writerService.List().Where(x=>x.WriterStatus==true);
             return View(writers);
         }
 
@@ -76,6 +76,14 @@ namespace SourBlogUI.Controllers
 
                 return View();
             }
+        }
+
+        public ActionResult DeleteWriter(int id)
+        {
+            var writer = _writerService.GetById(id);
+            writer.WriterStatus = false;
+            _writerService.Update(writer);
+            return RedirectToAction("Index");
         }
     }
 }

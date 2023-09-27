@@ -2,35 +2,43 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete
 {
     public class AboutManager : IAboutService
     {
+        private readonly IAboutDal _aboutDal;
+
+        public AboutManager(IAboutDal aboutDal)
+        {
+            _aboutDal = aboutDal;
+        }
+
         public List<About> List()
         {
-            throw new NotImplementedException();
+            return _aboutDal.List();
         }
 
         public void Insert(About entity)
         {
-            throw new NotImplementedException();
+            _aboutDal.Insert(entity);
         }
 
         public void Delete(About entity)
         {
-            throw new NotImplementedException();
+            _aboutDal.Delete(entity);
         }
 
         public void Update(About entity)
         {
-            throw new NotImplementedException();
+            _aboutDal.Update(entity);
         }
 
         public About GetById(int id)
         {
-            throw new NotImplementedException();
+            return _aboutDal.GetById(id);
         }
     }
 }

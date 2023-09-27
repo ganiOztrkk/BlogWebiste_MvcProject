@@ -18,7 +18,7 @@ namespace SourBlogUI.Controllers
 
         public ActionResult GetList()
         {
-            var categories = _categoryService.List();
+            var categories = _categoryService.List().Where(x=>x.CategoryStatus==true);
             return View(categories);
         }
 
@@ -52,7 +52,8 @@ namespace SourBlogUI.Controllers
         public ActionResult DeleteCategory(int id)
         {
             var category = _categoryService.GetById(id);
-            _categoryService.Delete(category);
+            category.CategoryStatus = false;
+            _categoryService.Update(category);
             return RedirectToAction("GetList");
         }
 

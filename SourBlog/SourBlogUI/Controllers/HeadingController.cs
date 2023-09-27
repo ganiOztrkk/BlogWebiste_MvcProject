@@ -17,7 +17,7 @@ namespace SourBlogUI.Controllers
         private readonly IWriterService _writerService = new WriterManager(new EfWriterDal());
         public ActionResult Index()
         {
-            var headings = _headingService.List();
+            var headings = _headingService.List().Where(x=>x.HeadingStatus==true);
             return View(headings);
         }
 
@@ -46,7 +46,39 @@ namespace SourBlogUI.Controllers
         public ActionResult AddHeading(Heading heading)
         {
             heading.HeadingDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+            heading.HeadingStatus = true;
             _headingService.Insert(heading);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteHeading(int id)
+        {
+            var heading = _headingService.GetById(id);
+            heading.HeadingStatus = false;
+            _headingService.Update(heading);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult UpdateHeading(int id)
+        {
+            List<SelectListItem> categories = (from item in _categoryService.List()
+                select new SelectListItem()
+                {
+                    Value = item.CategoryId.ToString(),
+                    Text = item.CategoryName
+                }).ToList();
+            ViewBag.Categories = categories;
+
+            var heading = _headingService.GetById(id);
+            return View(heading);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateHeading(Heading heading)
+        {
+            heading.HeadingStatus = true;
+            _headingService.Update(heading);
             return RedirectToAction("Index");
         }
     }

@@ -33,6 +33,8 @@ namespace EntityLayer.Concrete
         [StringLength(200)]
         public string WriterTitle { get; set; }
 
+        public bool WriterStatus { get; set; }
+
         //heading tablosu ilişkisi
         public ICollection<Heading> Headings { get; set; }
 

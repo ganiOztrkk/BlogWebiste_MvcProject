@@ -78,6 +78,14 @@
     <Compile Include="Migrations\202309270032462_mig_writer_title.designer.cs">
       <DependentUpon>202309270032462_mig_writer_title.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309270743261_mig_status_properties.cs" />
+    <Compile Include="Migrations\202309270743261_mig_status_properties.designer.cs">
+      <DependentUpon>202309270743261_mig_status_properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309271926410_mig_status_about.cs" />
+    <Compile Include="Migrations\202309271926410_mig_status_about.designer.cs">
+      <DependentUpon>202309271926410_mig_status_about.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -100,6 +108,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202309270032462_mig_writer_title.resx">
       <DependentUpon>202309270032462_mig_writer_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309270743261_mig_status_properties.resx">
+      <DependentUpon>202309270743261_mig_status_properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309271926410_mig_status_about.resx">
+      <DependentUpon>202309271926410_mig_status_about.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

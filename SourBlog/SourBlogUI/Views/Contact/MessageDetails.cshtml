@@ -1,0 +1,48 @@
+﻿@model EntityLayer.Concrete.Contact
+@{
+    ViewBag.Title = "MessageDetails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br/>
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- /.col -->
+                <div class="col-md-9">
+                    <div class="card card-primary card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">Read Message</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body p-0">
+                            <div class="mailbox-read-info">
+                                <h5>@Model.Subject</h5>
+                                <h6>
+                                    From: @Model.UserMail
+                                    <span class="mailbox-read-time float-right">15 Feb. 2015 11:03 PM</span>
+                                </h6>
+                            </div>
+                            <!-- /.mailbox-read-info -->
+                            <hr/>
+                            <!-- /.mailbox-controls -->
+                            <div class="mailbox-read-message">
+                                <p>@Model.Message</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="float-right">
+                                <button type="button" class="btn btn-default"><i class="fas fa-reply"></i> Reply</button>
+                                <button type="button" class="btn btn-default"><i class="fas fa-share"></i> Forward</button>
+                            </div>
+                            <a href="/Contact/DeleteMessage/@Model.ContactId" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</a>
+                            @*<button type="button" class="btn btn-default"><i class="far fa-trash-alt"></i> Delete</button>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

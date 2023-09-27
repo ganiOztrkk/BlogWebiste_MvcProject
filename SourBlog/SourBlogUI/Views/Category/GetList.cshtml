@@ -12,7 +12,6 @@
             <th>#</th>
             <th>Category Name</th>
             <th>Category Description</th>
-            <th>Category Status</th>
             <th>Headings</th>
             <th>Delete</th>
             <th>Update</th>
@@ -23,7 +22,6 @@
                 <td>@item.CategoryId</td>
                 <td>@item.CategoryName</td>
                 <td>@item.CategoryDescription</td>
-                <td>@item.CategoryStatus</td>
                 <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Delete</a></td>
                 <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-warning">Update</a></td>
                 <td><a href="/Category/HeadingList/@item.CategoryId" class="btn btn-primary">Headings</a></td>
