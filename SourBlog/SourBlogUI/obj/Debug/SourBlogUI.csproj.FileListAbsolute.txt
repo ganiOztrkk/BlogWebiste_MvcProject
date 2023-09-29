@@ -96,3 +96,7 @@ C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\Sys
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\FluentValidation.xml
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\PagedList.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\PagedList.Mvc.dll
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\PagedList.xml
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\SourBlogUI\bin\PagedList.Mvc.xml

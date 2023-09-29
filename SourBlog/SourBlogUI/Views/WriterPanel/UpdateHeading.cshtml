@@ -1,0 +1,24 @@
+﻿@model EntityLayer.Concrete.Heading
+
+@{
+    ViewBag.Title = "UpdateHeading";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<div class="container">
+    @using (Html.BeginForm("UpdateHeading", "WriterPanel", FormMethod.Post))
+    {
+        @Html.HiddenFor(x => x.HeadingDate)
+        @Html.HiddenFor(x => x.HeadingId)
+        @Html.HiddenFor(x => x.WriterId)
+        <label>Heading Title</label>
+        @Html.TextBoxFor(x => x.HeadingName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.HeadingName, "", new { @style = "color:red" })
+        <br />
+        <label>Heading Category</label>
+        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.Categories, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CategoryId, "", new { @style = "color:red" })
+        <br />
+        <button class="btn btn-success">Update Heading</button>
+    }
+</div>

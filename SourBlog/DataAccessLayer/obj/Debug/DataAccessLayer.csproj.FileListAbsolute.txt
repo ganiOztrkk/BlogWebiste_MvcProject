@@ -19,3 +19,7 @@ C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\ob
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_writer_title.resources
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_status_properties.resources
 C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_status_about.resources
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_messageTable.resources
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_ImageFile.resources
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_Admin.resources
+C:\Users\gani9\Desktop\GitHub\BlogWebiste_MvcProject\SourBlog\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig_add_Admin_Image.resources

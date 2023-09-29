@@ -16,7 +16,6 @@ namespace SourBlogUI.Controllers
         private readonly ContactValidator _contactValidator = new ContactValidator();
         public ActionResult Index()
         {
-            ViewBag.Inbox = _contactService.List().Count();
             var contactValues = _contactService.List();
             return View(contactValues);
         }
@@ -32,6 +31,12 @@ namespace SourBlogUI.Controllers
             var message = _contactService.GetById(id);
             _contactService.Delete(message);
             return RedirectToAction("Index");
+        }
+
+        public PartialViewResult MessageListMenu()
+        {
+            ViewBag.Inbox = _contactService.List().Count();
+            return PartialView();
         }
     }
 }
