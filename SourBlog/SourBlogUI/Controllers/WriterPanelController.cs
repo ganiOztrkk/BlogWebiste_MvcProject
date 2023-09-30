@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.Mvc;
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete.Repositories;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 
 namespace SourBlogUI.Controllers
 {
@@ -15,11 +18,38 @@ namespace SourBlogUI.Controllers
         private readonly IHeadingService _headingService = new HeadingManager(new EfHeadingDal());
         private readonly ICategoryService _categoryService = new CategoryManager(new EfCategoryDal());
         private readonly IWriterService _writerService = new WriterManager(new EfWriterDal());
+        private readonly WriterValidator _writerValidator = new WriterValidator();
 
+        [HttpGet]
         public ActionResult WriterProfile()
         {
+            var writerMail = (string)Session["WriterMail"];
+            var writerInfo = _writerService.List().FirstOrDefault(x => x.WriterMail == writerMail);
+            if (writerInfo != null)
+            {
+                var writer = _writerService.GetById(writerInfo.WriterId);
+                return View(writer);
+            }
+            return RedirectToAction("WriterLogin", "Login");
+        }
+        [HttpPost]
+        public ActionResult UpdateWriter(Writer writer)
+        {
+            ValidationResult validationResult = _writerValidator.Validate(writer);
+            if (validationResult.IsValid)
+            {
+                _writerService.Update(writer);
+                return RedirectToAction("WriterProfile");
+            }
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
 
-            return View();
+                return View();
+            }
         }
 
 
